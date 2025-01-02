@@ -5,6 +5,8 @@ services:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
       - POSTGRES_DB=db
+      - UTC=-3
+      - TIMEZONE=America/Sao_Paulo
     ports:
       - "5432:5432"
     healthcheck:
