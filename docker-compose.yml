@@ -5,7 +5,7 @@ services:
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=db
+      - POSTGRES_DB=postgres
       - UTC=-3
       - TIMEZONE=America/Sao_Paulo
     ports:
