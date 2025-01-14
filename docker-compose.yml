@@ -1,6 +1,7 @@
 services:
   db:
     image: postgres:latest
+    container_name: postgres
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
