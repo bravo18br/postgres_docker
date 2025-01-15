@@ -20,11 +20,12 @@ services:
       - pg_data:/var/lib/postgresql/data
       - ./postgres_custom:/etc/postgresql
     networks:
-      - net
+      - monitora_sites_net
 volumes:
   pg_data:
     driver: local
 
 networks:
-  net:
+  monitora_sites_net:
     driver: bridge
+    external: true
